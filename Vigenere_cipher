@@ -2,7 +2,7 @@ try:
     alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
     phrase = str(input("Введите то, что нужно защифровать: "))
     result = ""
-    key = str(input("Введите ключ: "))
+    key = str(input("Введите ключ (слово): "))
     key *= (len(phrase) // len(key)) + 1
     for i, j in enumerate(phrase):
         tmp = alphabet.index(j) + alphabet.index(key[i])
