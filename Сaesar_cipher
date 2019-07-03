@@ -1,0 +1,10 @@
+try:
+    alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+    phrase = str(input("Введите то, что нужно защифровать: "))
+    new_word = ""
+    key = int(input("Введите ключ (число): "))
+    for i in phrase:
+        new_word = new_word + alphabet[(alphabet.index(i) + key) % 33]
+    print("Зашифрованное слово:", new_word)
+except ValueError:
+    print("Были введены некорректные данные")
