@@ -1,0 +1,16 @@
+x = int(input("Enter number of money:"))
+print("Your change: ", x)
+M = 0
+while x >= 50:
+    x = x - 50
+    M += 1
+while x >= 10:
+    x = x - 10
+    M += 1
+while x >= 5:
+    x = x - 5
+    M += 1
+while x >= 1:
+    x = x - 1
+    M += 1
+print("Number of money in your change", M)
